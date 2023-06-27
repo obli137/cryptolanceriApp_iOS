@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		06D80CB32A3BA41A0009B2C7 /* CryptolancerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CB22A3BA41A0009B2C7 /* CryptolancerAppApp.swift */; };
-		06D80CB52A3BA41A0009B2C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CB42A3BA41A0009B2C7 /* ContentView.swift */; };
 		06D80CB72A3BA41B0009B2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D80CB62A3BA41B0009B2C7 /* Assets.xcassets */; };
 		06D80CBA2A3BA41B0009B2C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D80CB92A3BA41B0009B2C7 /* Preview Assets.xcassets */; };
 		06D80CC42A3BA41B0009B2C7 /* CryptolancerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CC32A3BA41B0009B2C7 /* CryptolancerAppTests.swift */; };
 		06D80CCE2A3BA41B0009B2C7 /* CryptolancerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CCD2A3BA41B0009B2C7 /* CryptolancerAppUITests.swift */; };
 		06D80CD02A3BA41B0009B2C7 /* CryptolancerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CCF2A3BA41B0009B2C7 /* CryptolancerAppUITestsLaunchTests.swift */; };
+		06D80CE02A3BA5730009B2C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CDF2A3BA5730009B2C7 /* LoginView.swift */; };
+		06D80CE22A3BA61C0009B2C7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D80CE12A3BA61C0009B2C7 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		06D80CAF2A3BA41A0009B2C7 /* CryptolancerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptolancerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D80CB22A3BA41A0009B2C7 /* CryptolancerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptolancerAppApp.swift; sourceTree = "<group>"; };
-		06D80CB42A3BA41A0009B2C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06D80CB62A3BA41B0009B2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06D80CB92A3BA41B0009B2C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06D80CBF2A3BA41B0009B2C7 /* CryptolancerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptolancerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		06D80CC92A3BA41B0009B2C7 /* CryptolancerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptolancerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06D80CCD2A3BA41B0009B2C7 /* CryptolancerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptolancerAppUITests.swift; sourceTree = "<group>"; };
 		06D80CCF2A3BA41B0009B2C7 /* CryptolancerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptolancerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06D80CDF2A3BA5730009B2C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		06D80CE12A3BA61C0009B2C7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,10 @@
 		06D80CB12A3BA41A0009B2C7 /* CryptolancerApp */ = {
 			isa = PBXGroup;
 			children = (
+				06D80CDE2A3BA47B0009B2C7 /* VViewModels */,
+				06D80CDD2A3BA4620009B2C7 /* Views */,
+				06D80CDC2A3BA44A0009B2C7 /* Models */,
 				06D80CB22A3BA41A0009B2C7 /* CryptolancerAppApp.swift */,
-				06D80CB42A3BA41A0009B2C7 /* ContentView.swift */,
 				06D80CB62A3BA41B0009B2C7 /* Assets.xcassets */,
 				06D80CB82A3BA41B0009B2C7 /* Preview Content */,
 			);
@@ -125,6 +129,29 @@
 				06D80CCF2A3BA41B0009B2C7 /* CryptolancerAppUITestsLaunchTests.swift */,
 			);
 			path = CryptolancerAppUITests;
+			sourceTree = "<group>";
+		};
+		06D80CDC2A3BA44A0009B2C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06D80CDD2A3BA4620009B2C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06D80CDF2A3BA5730009B2C7 /* LoginView.swift */,
+				06D80CE12A3BA61C0009B2C7 /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06D80CDE2A3BA47B0009B2C7 /* VViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06D80CB52A3BA41A0009B2C7 /* ContentView.swift in Sources */,
+				06D80CE02A3BA5730009B2C7 /* LoginView.swift in Sources */,
+				06D80CE22A3BA61C0009B2C7 /* Home.swift in Sources */,
 				06D80CB32A3BA41A0009B2C7 /* CryptolancerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
